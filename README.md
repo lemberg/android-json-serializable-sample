@@ -15,7 +15,7 @@ Lists of objects, Maps of objects, etc.
 
 **Using JsonSerializable**
 
-1. Simple objects example:
+* Simple objects example:
 ```java
 
         String name = "TestName";
@@ -33,7 +33,7 @@ Lists of objects, Maps of objects, etc.
 
 ```
 
-2. List of objects
+* List of objects
 ```java
 
         String name = "TestName";
@@ -60,7 +60,7 @@ Lists of objects, Maps of objects, etc.
 
 ```
 
-3. Map of objects
+* Map of objects
 ```java
 
         String name = "TestName";
