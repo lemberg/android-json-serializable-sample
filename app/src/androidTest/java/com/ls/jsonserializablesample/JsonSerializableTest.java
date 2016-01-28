@@ -51,6 +51,21 @@ public class JsonSerializableTest extends InstrumentationTestCase {
         assertEquals(expectedProfile, actualProfile);
     }
 
+    public void testListEqualsFromJson() {
+
+        List<UserProfile> expectedList = utils.getUserProfileList();
+        List<UserProfile> actualList = JsonSerializable.toList(utils.loadJsonFromAsset("user_profile_array.json"), UserProfile.class);
+
+        assertEquals(expectedList, actualList);
+    }
+
+    public void testMapsEqualsFromJson() {
+
+        Map<String, UserProfile> expectedMap = utils.getUserProfileMap();
+        Map<String, UserProfile> actualMap = JsonSerializable.toMap(utils.loadJsonFromAsset("user_profile_map.json"), String.class, UserProfile.class);
+
+        assertEquals(expectedMap, actualMap);
+    }
 
     public void testJsonEquals_objects() {
 
@@ -65,16 +80,6 @@ public class JsonSerializableTest extends InstrumentationTestCase {
         JsonAssert.assertJsonEquals(expectedJson, actualJson);
     }
 
-
-    public void testListEqualsFromJson() {
-
-        List<UserProfile> expectedList = utils.getUserProfileList();
-        List<UserProfile> actualList = JsonSerializable.toList(utils.loadJsonFromAsset("user_profile_array.json"), UserProfile.class);
-
-        assertEquals(expectedList, actualList);
-    }
-
-
     public void testJsonEquals_list() {
 
         String expectedJson = utils.loadJsonFromAsset("user_profile_array.json");
@@ -83,16 +88,6 @@ public class JsonSerializableTest extends InstrumentationTestCase {
         JsonAssert.assertJsonStructureEquals(expectedJson, actualJson);
         JsonAssert.assertJsonEquals(expectedJson, actualJson);
     }
-
-
-    public void testMapsEqualsFromJson() {
-
-        Map<String, UserProfile> expectedMap = utils.getUserProfileMap();
-        Map<String, UserProfile> actualMap = JsonSerializable.toMap(utils.loadJsonFromAsset("user_profile_map.json"), String.class, UserProfile.class);
-
-        assertEquals(expectedMap, actualMap);
-    }
-
 
     public void testJsonEquals_map() {
 
