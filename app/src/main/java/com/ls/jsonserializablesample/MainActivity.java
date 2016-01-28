@@ -72,6 +72,5 @@ public class MainActivity extends AppCompatActivity {
 
         String listListStr = JsonSerializable.toJson(profileListLists);
 
-
     }
 }

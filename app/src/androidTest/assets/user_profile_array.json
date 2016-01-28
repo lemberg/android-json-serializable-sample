@@ -1,0 +1,32 @@
+[
+  {
+    "username": "test-username-1",
+    "surname": "test-surname-1",
+    "age": 1,
+    "married" : false
+  },
+  {
+    "username": "test-username-2",
+    "surname": "test-surname-2",
+    "age": 2,
+    "married" : false
+  },
+  {
+    "username": "test-username-3",
+    "surname": "test-surname-3",
+    "age": 3,
+    "married" : false
+  },
+  {
+    "username": "test-username-4",
+    "surname": "test-surname-4",
+    "age": 4,
+    "married" : false
+  },
+  {
+    "username": "test-username-5",
+    "surname": "test-surname-5",
+    "age": 5,
+    "married" : false
+  }
+]

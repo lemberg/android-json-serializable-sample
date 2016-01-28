@@ -1,0 +1,11 @@
+{
+  "field1" : 1,
+  "field2" : 1.0,
+  "field3" : true,
+  "field4" : "test",
+  "field5" : {
+    "key1" : "test",
+    "key2" : "test",
+    "key3" : "test"
+  }
+}
